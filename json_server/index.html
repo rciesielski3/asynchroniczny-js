@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Book Collection</title>
+</head>
+<body>
+<h1>Book Collection</h1>
+<div>
+<input type="text" id="title" placeholder="Title" />
+<input type="text" id="author" placeholder="Author" />
+<input type="number" id="year" placeholder="Year" />
+<button onclick="addBook()">Add Book</button>
+</div>
+<div>
+<input type="text" id="filter-author" placeholder="Filter by author" />
+<select id="sort">
+<option value="title">Title</option>
+<option value="year">Year</option>
+</select>
+<button onclick="loadBooks()">Filter/Sort</button>
+</div>
+<ul id="book-list"></ul>
+<div>
+<button onclick="prevPage()">Previous</button>
+<span id="page-info">Page 1</span>
+<button onclick="nextPage()">Next</button>
+</div>
+<script src="app.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"86806f88af3cc291","version":"2024.3.0","token":"7b938305507f4ff9bde0e5828e8b1e42"}' crossorigin="anonymous"></script>
+</body>
+</html>
